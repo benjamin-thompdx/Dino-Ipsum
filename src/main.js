@@ -16,7 +16,6 @@ $(document).ready(function() {
       let dinoService = new DinoService();
       const response = await dinoService.getDinoIpsum(input1, input2);
       getElements(response);
-      console.log(response);
     })();
 
     function getElements(response) {
