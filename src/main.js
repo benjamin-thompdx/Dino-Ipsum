@@ -19,8 +19,13 @@ $(document).ready(function() {
     })();
 
     function getElements(response) {
-      $('.showDinos').text(`${response}`);
-      $('.showDinos').show();
+      if (response) {
+        $('.showDinos').text(`${response}`);
+        $('.showDinos').show();
+      } else {
+        $('.showDinos').text(`There was an error handeling your request.`);
+        $('.showDinos').show();
+      }
     }
 
   });
